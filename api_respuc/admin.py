@@ -5,7 +5,7 @@ from django import forms
 
 class VoluntarioAdmin(admin.ModelAdmin):
     search_fields = ('matricula',)
-    fieldsets = [('identificacao', {'fields': ['nome', 'data_de_nascimento', 'nome_do_curso', 'periodo', 'matricula', 'telefone_fixo', 'celular', 'email', 'idioma', 'CPF', 'genero']}), ('endereco', {'fields': ['rua', 'numero', 'complemento', 'bairro', 'cidade', 'estado', 'CEP']})]
+    fieldsets = [('Identificacao', {'fields': ['nome', 'data_de_nascimento', 'nome_do_curso', 'periodo', 'matricula', 'telefone_fixo', 'celular', 'email', 'idioma', 'CPF', 'genero']}), ('Endereco', {'fields': ['rua', 'numero', 'complemento', 'bairro', 'cidade', 'estado', 'CEP']})]
 
 class ParceiroInternoInline(admin.StackedInline):
 	model = ParceiroInterno
